@@ -108,7 +108,7 @@ export default function Home() {
     setIsProofGenerating(true);
 
     try {
-      const proofId = await generateZKMLProof();
+      const proofId = await generateZKMLProof(discordScore);
 
       if (proofId) {
         console.log("Proof generated:", proofId);
