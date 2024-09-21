@@ -277,8 +277,7 @@ export default function Home() {
                   <p className="text-2xl font-semibold text-gray-100">{worldcoinScore}</p>
                   <div className="mt-4 flex space-x-4">
                   <IDKitWidget
-                    // @ts-ignore
-                    action={action}
+                    action={action!}
                     app_id={app_id}
                     onSuccess={onSuccess}
                     handleVerify={handleProof}
