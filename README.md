@@ -4,18 +4,25 @@
 We built a private onchain voting system with sybil resistance by combining MACI and zkTLS. This allows for fairer governance by eliminating bribery and collusion, and enabling private voting based on off-chain contributions.
 
 ### Problems
-In decentralized governance, onchain voting plays a pivotal role in decision-making. However, the transparency of individual votes poses several challenges:
 
-Vote Transparency and Bribery: Since onchain votes are publicly visible, it opens the door for bribery, collusion, and undue influence, compromising the integrity of the voting process.
-Sybil Attacks: Malicious actors can manipulate votes by creating multiple identities (Sybil attacks), skewing the voting results. Preventing such attacks is difficult with existing onchain mechanisms.
-Off-Chain Data Integration: While incorporating off-chain data into Web3 applications could enhance the system's security and fairness, doing so in a private, portable, and permissionless manner has proven challenging.
+Onchain voting is a critical component of decentralized governance, but it faces several significant challenges:
+
+1. **Vote Transparency & Bribery**: Onchain votes are often public, leading to risks of bribery, collusion, and undue influence on voters, which can undermine the integrity of the process.
+2. **Sybil Attacks**: Malicious actors can create multiple identities to manipulate voting outcomes, a problem known as Sybil attacks. Preventing these attacks using purely onchain mechanisms has proven difficult.
+3. **Off-Chain Data Integration**: While incorporating off-chain data into Web3 applications can enhance security and fairness, doing so privately, portably, and permissionlessly is a major challenge.
 
 ### Solution
-In decentralized governance, onchain voting plays a pivotal role in decision-making. However, the transparency of individual votes poses several challenges:
 
-Vote Transparency and Bribery: Since onchain votes are publicly visible, it opens the door for bribery, collusion, and undue influence, compromising the integrity of the voting process.
-Sybil Attacks: Malicious actors can manipulate votes by creating multiple identities (Sybil attacks), skewing the voting results. Preventing such attacks is difficult with existing onchain mechanisms.
-Off-Chain Data Integration: While incorporating off-chain data into Web3 applications could enhance the system's security and fairness, doing so in a private, portable, and permissionless manner has proven challenging.
+To address these challenges, we have developed a private, Sybil-resistant onchain voting system by integrating three technologies: **MACI**, **zkTLS**, and **zkML**.
+
+- **MACI** (Minimum Anti-Collusion Infrastructure) is used to maintain privacy in onchain voting. It ensures that individual votes remain encrypted and private, revealing only the final results. This reduces the risks of bribery and collusion.
+  
+- **zkTLS** bridges the gap between Web2 and Web3, enabling users to securely export their private Web2 data, generate zero-knowledge proofs (zk-proofs), and verify them onchain. This allows off-chain data to be used privately, portably, and permissionlessly in Web3 ecosystems.
+  
+- **zkML** proves the inference results of machine learning models without revealing the input data. This technology enables private Web2 data to be integrated and verifiable in Web3 voting systems.
+
+By combining **MACI**, **zkTLS**, and **zkML**, we’ve created a Sybil-resistant, private onchain voting system that incorporates off-chain data while ensuring security and privacy. Off-chain contributions are verifiable through zkTLS and zkML and are seamlessly integrated into MACI, providing a robust solution to the challenges of vote transparency and Sybil resistance.
+
 
 ### Usecase
 
