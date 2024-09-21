@@ -1,5 +1,5 @@
 import {
-	ExclamationTriangleIcon,
+  UserCircleIcon,
 } from "@heroicons/react/24/outline";
 
 export const Biometric = {
@@ -7,5 +7,5 @@ export const Biometric = {
 	stat: "1",
 	change: "0%",
 	changeType: "increase",
-	icon: ExclamationTriangleIcon,
+	icon: UserCircleIcon,
 };

@@ -1,5 +1,5 @@
 import {
-	ExclamationTriangleIcon,
+	TvIcon,
 } from "@heroicons/react/24/outline";
 
 export const ScreenPressureScore = {
@@ -7,5 +7,5 @@ export const ScreenPressureScore = {
 	stat: "76",
 	change: "5.4%",
 	changeType: "decrease",
-	icon: ExclamationTriangleIcon,
+	icon: TvIcon,
 };

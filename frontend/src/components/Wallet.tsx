@@ -7,7 +7,7 @@ export function Wallet() {
   return (
     <button
       onClick={() => connect({ connector: metaMask() })}
-      className="bg-slate-300 px-4 py-2 rounded-lg"
+      className="bg-blue-400 px-4 py-2 rounded-lg"
     >
       Connect MetaMask
     </button>
@@ -28,7 +28,7 @@ export function Account() {
       <div className="flex mt-1">
         <button
           onClick={() => disconnect()}
-          className="text-sm bg-slate-200 px-2 py-1 rounded-lg ml-auto"
+          className="text-sm bg-blue-400 px-2 py-1 rounded-lg ml-auto"
         >
           Disconnect
         </button>

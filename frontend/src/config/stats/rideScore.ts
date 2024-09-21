@@ -1,5 +1,5 @@
 import {
-	ExclamationTriangleIcon,
+	WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
 export const RideScore = {
@@ -7,5 +7,5 @@ export const RideScore = {
 	stat: "87",
 	change: "5.4%",
 	changeType: "decrease",
-	icon: ExclamationTriangleIcon,
+	icon: WrenchScrewdriverIcon,
 };

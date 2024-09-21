@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAccount } from "wagmi";
-import { Bars3Icon, BugAntIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BugAntIcon, LinkIcon } from "@heroicons/react/24/outline";
 import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick, useScaffoldContractRead } from "~~/hooks/scaffold-eth";
 
@@ -24,6 +24,11 @@ export const menuLinks: HeaderMenuLink[] = [
     label: "Debug Contracts",
     href: "/debug",
     icon: <BugAntIcon className="h-4 w-4" />,
+  },
+  {
+    label: "User Verify",
+    href: "http://localhost:3000/",
+    icon: <LinkIcon className="h-4 w-4" />,
   },
 ];
 
@@ -100,11 +105,11 @@ export const Header = () => {
         </div>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
           <div className="flex relative w-10 h-10">
-            <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
+            <Image alt="ChilleVille logo" className="cursor-pointer" fill src="/chillville.png" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">MACI Wrapper</span>
-            <span className="text-xs">Private Voting Starter Kit</span>
+            <span className="font-bold leading-tight">ChillVille MACI Voting</span>
+            <span className="text-xs">Private Voting with Sybil Resistance</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">

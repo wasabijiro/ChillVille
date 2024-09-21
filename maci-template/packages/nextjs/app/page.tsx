@@ -3,7 +3,7 @@
 import Image from "next/image";
 import RegisterButton from "./_components/RegisterButton";
 import type { NextPage } from "next";
-import HeroImage from "~~/assets/private_voting.png";
+import HeroImage from "~~/assets/chillville.png";
 import { useAuthUserOnly } from "~~/hooks/useAuthUserOnly";
 
 const Home: NextPage = () => {
