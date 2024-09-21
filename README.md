@@ -1,11 +1,9 @@
-
 # ChillVille
 
 ### Overview
 
 
 ### Problems
-
 
 
 ### Solution
@@ -43,21 +41,7 @@
 ```
 
 ### Development
-View [`Makefile`](./Makefile)<br>
-※ The backend has not been deployed yet. You need to run the backend locally.
-```sh
-cp frontend/.env.sample frontend/.env
-cp scripts/.env.sample scripts/.env
 
-# run tlsn server
-make tlsn_server
-# run regression server
-make regression_server
-
-# run frontend
-make ui_install
-make ui_dev
-```
 
 ## zkPass Contract
 https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
@@ -92,10 +76,7 @@ https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
 
 ### What's next for
 
-- Support for Chrome extension
-- Generate TLS Notary proof on the client side
-- Implement Solidity contract to verify TLS Notary proof
-- Integrate TLS Notary and zkML into a single circuit
+
 
 ### Implementation Status
 
@@ -103,9 +84,10 @@ https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
 | :------------- | ---------------------------------------------------------------: |
 | Demo Movie      |                                      [https://youtu.be/zmENJzrxZRw](https://youtu.be/WDGJQbM-rik)|
 | Pitch Doc    |   [chillville-presentation](https://www.canva.com/design/DAGOvSFvJ4E/SfJTYw3sauGSbj1k4oQdDg/edit?utm_content=DAGOvSFvJ4E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) |
-| Demo Site     |                                 [chillville-demo](https://zk-credit-teal.vercel.app/) | 
+| Demo Site     |                                 [chillville-demo](https://eth-sg.vercel.app/)) | 
 
 ### References
-- https://github.com/tlsnotary
+- https://github.com/zkPassOfficial
+- https://github.com/privacy-scaling-explorations/maci
 - https://github.com/storswiftlabs/python2noir
 - https://github.com/storswiftlabs/zkml-noir
