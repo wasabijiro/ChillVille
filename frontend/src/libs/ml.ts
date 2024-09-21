@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const fetchMLInference = async (stats : any) => {
+export const fetchMLInference = async (discordScore: number, stats : any) => {
   console.log({ stats });
   try {
     console.log("Reloading");
@@ -7,12 +7,12 @@ export const fetchMLInference = async (stats : any) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        discord_score: discordScore,
         biometric: Number(stats[0].stat || 0),
         wallet_score: Number(stats[1].stat || 0),
         screen_pressure_score: Number(stats[2].stat || 0),
         acceleration_score: Number(stats[3].stat || 0),
-        discord_score: Number(stats[4].stat || 0),
-        ride_score: Number(stats[5].stat || 0),
+        ride_score: Number(stats[4].stat || 0),
       })
     });
 

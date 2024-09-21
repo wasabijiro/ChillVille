@@ -142,7 +142,7 @@ export default function Home() {
 
   const reloadMLInference = async () => {
     console.log("Reloading");
-    const prediction = await fetchMLInference(stats);
+    const prediction = await fetchMLInference(discordScore, stats);
     if (prediction === 'Human') {
       setIsValid(true);
     } else if (prediction === 'Bot') {
