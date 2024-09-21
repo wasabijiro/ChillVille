@@ -13,7 +13,7 @@
 
 
 ### Technologies I used
-<img width="727" alt="スクリーンショット 2024-09-22 7 38 40" src="https://github.com/user-attachments/assets/9ab4cb67-a131-4c5d-a842-f0bdc41758a1">
+<img width="715" alt="スクリーンショット 2024-09-22 7 45 39" src="https://github.com/user-attachments/assets/e3b7ae77-7383-48e7-b800-539ee10868be">
 
 ### Architecture
 ```mermaid
