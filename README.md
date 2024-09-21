@@ -84,7 +84,7 @@ https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
 | :------------- | ---------------------------------------------------------------: |
 | Demo Movie      |                                      [https://youtu.be/zmENJzrxZRw](https://youtu.be/WDGJQbM-rik)|
 | Pitch Doc    |   [chillville-presentation](https://www.canva.com/design/DAGOvSFvJ4E/SfJTYw3sauGSbj1k4oQdDg/edit?utm_content=DAGOvSFvJ4E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) |
-| Demo Site     |                                 [chillville-demo](https://eth-sg.vercel.app/)) | 
+| Demo Site     |                                 [chillville-demo](https://eth-sg.vercel.app/)| 
 
 ### References
 - https://github.com/zkPassOfficial
