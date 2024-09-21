@@ -1,0 +1,902 @@
+[
+    {
+        "biometric": 1,
+        "wallet_score": 45,
+        "screen_pressure_score": 96,
+        "acceleration_score": 79,
+        "discord_score": 82,
+        "ride_score": 98,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 41,
+        "screen_pressure_score": 66,
+        "acceleration_score": 94,
+        "discord_score": 48,
+        "ride_score": 80,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 26,
+        "screen_pressure_score": 15,
+        "acceleration_score": 39,
+        "discord_score": 56,
+        "ride_score": 50,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 96,
+        "screen_pressure_score": 88,
+        "acceleration_score": 80,
+        "discord_score": 87,
+        "ride_score": 16,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 36,
+        "screen_pressure_score": 69,
+        "acceleration_score": 83,
+        "discord_score": 14,
+        "ride_score": 45,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 1,
+        "screen_pressure_score": 8,
+        "acceleration_score": 68,
+        "discord_score": 14,
+        "ride_score": 90,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 25,
+        "screen_pressure_score": 76,
+        "acceleration_score": 87,
+        "discord_score": 5,
+        "ride_score": 97,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 46,
+        "screen_pressure_score": 45,
+        "acceleration_score": 64,
+        "discord_score": 36,
+        "ride_score": 41,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 60,
+        "screen_pressure_score": 38,
+        "acceleration_score": 67,
+        "discord_score": 28,
+        "ride_score": 44,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 42,
+        "screen_pressure_score": 12,
+        "acceleration_score": 20,
+        "discord_score": 83,
+        "ride_score": 77,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 63,
+        "screen_pressure_score": 3,
+        "acceleration_score": 35,
+        "discord_score": 12,
+        "ride_score": 49,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 41,
+        "screen_pressure_score": 0,
+        "acceleration_score": 8,
+        "discord_score": 35,
+        "ride_score": 20,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 38,
+        "screen_pressure_score": 9,
+        "acceleration_score": 12,
+        "discord_score": 46,
+        "ride_score": 48,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 4,
+        "screen_pressure_score": 3,
+        "acceleration_score": 81,
+        "discord_score": 45,
+        "ride_score": 68,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 25,
+        "screen_pressure_score": 50,
+        "acceleration_score": 30,
+        "discord_score": 97,
+        "ride_score": 57,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 73,
+        "screen_pressure_score": 69,
+        "acceleration_score": 42,
+        "discord_score": 62,
+        "ride_score": 0,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 36,
+        "screen_pressure_score": 36,
+        "acceleration_score": 68,
+        "discord_score": 71,
+        "ride_score": 56,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 57,
+        "screen_pressure_score": 2,
+        "acceleration_score": 27,
+        "discord_score": 93,
+        "ride_score": 93,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 21,
+        "screen_pressure_score": 64,
+        "acceleration_score": 86,
+        "discord_score": 48,
+        "ride_score": 31,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 10,
+        "screen_pressure_score": 25,
+        "acceleration_score": 27,
+        "discord_score": 10,
+        "ride_score": 49,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 42,
+        "screen_pressure_score": 60,
+        "acceleration_score": 37,
+        "discord_score": 17,
+        "ride_score": 12,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 3,
+        "screen_pressure_score": 67,
+        "acceleration_score": 41,
+        "discord_score": 34,
+        "ride_score": 50,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 24,
+        "screen_pressure_score": 74,
+        "acceleration_score": 73,
+        "discord_score": 52,
+        "ride_score": 43,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 37,
+        "screen_pressure_score": 88,
+        "acceleration_score": 11,
+        "discord_score": 78,
+        "ride_score": 17,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 17,
+        "screen_pressure_score": 13,
+        "acceleration_score": 93,
+        "discord_score": 57,
+        "ride_score": 100,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 81,
+        "screen_pressure_score": 16,
+        "acceleration_score": 6,
+        "discord_score": 37,
+        "ride_score": 53,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 83,
+        "screen_pressure_score": 64,
+        "acceleration_score": 76,
+        "discord_score": 9,
+        "ride_score": 98,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 7,
+        "screen_pressure_score": 16,
+        "acceleration_score": 50,
+        "discord_score": 65,
+        "ride_score": 82,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 75,
+        "screen_pressure_score": 10,
+        "acceleration_score": 50,
+        "discord_score": 1,
+        "ride_score": 2,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 17,
+        "screen_pressure_score": 7,
+        "acceleration_score": 15,
+        "discord_score": 56,
+        "ride_score": 93,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 78,
+        "screen_pressure_score": 58,
+        "acceleration_score": 24,
+        "discord_score": 13,
+        "ride_score": 86,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 69,
+        "screen_pressure_score": 42,
+        "acceleration_score": 72,
+        "discord_score": 19,
+        "ride_score": 46,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 7,
+        "screen_pressure_score": 37,
+        "acceleration_score": 97,
+        "discord_score": 97,
+        "ride_score": 3,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 35,
+        "screen_pressure_score": 24,
+        "acceleration_score": 60,
+        "discord_score": 22,
+        "ride_score": 7,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 66,
+        "screen_pressure_score": 65,
+        "acceleration_score": 59,
+        "discord_score": 26,
+        "ride_score": 66,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 70,
+        "screen_pressure_score": 37,
+        "acceleration_score": 15,
+        "discord_score": 10,
+        "ride_score": 74,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 4,
+        "screen_pressure_score": 65,
+        "acceleration_score": 50,
+        "discord_score": 73,
+        "ride_score": 79,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 97,
+        "screen_pressure_score": 20,
+        "acceleration_score": 93,
+        "discord_score": 51,
+        "ride_score": 61,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 72,
+        "screen_pressure_score": 18,
+        "acceleration_score": 33,
+        "discord_score": 13,
+        "ride_score": 4,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 54,
+        "screen_pressure_score": 48,
+        "acceleration_score": 100,
+        "discord_score": 63,
+        "ride_score": 39,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 36,
+        "screen_pressure_score": 31,
+        "acceleration_score": 91,
+        "discord_score": 69,
+        "ride_score": 74,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 21,
+        "screen_pressure_score": 78,
+        "acceleration_score": 22,
+        "discord_score": 25,
+        "ride_score": 75,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 75,
+        "screen_pressure_score": 17,
+        "acceleration_score": 85,
+        "discord_score": 44,
+        "ride_score": 94,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 24,
+        "screen_pressure_score": 9,
+        "acceleration_score": 36,
+        "discord_score": 96,
+        "ride_score": 100,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 79,
+        "screen_pressure_score": 23,
+        "acceleration_score": 99,
+        "discord_score": 37,
+        "ride_score": 59,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 23,
+        "screen_pressure_score": 7,
+        "acceleration_score": 79,
+        "discord_score": 56,
+        "ride_score": 3,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 80,
+        "screen_pressure_score": 91,
+        "acceleration_score": 54,
+        "discord_score": 88,
+        "ride_score": 64,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 69,
+        "screen_pressure_score": 87,
+        "acceleration_score": 40,
+        "discord_score": 5,
+        "ride_score": 87,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 62,
+        "screen_pressure_score": 96,
+        "acceleration_score": 87,
+        "discord_score": 14,
+        "ride_score": 100,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 42,
+        "screen_pressure_score": 28,
+        "acceleration_score": 84,
+        "discord_score": 47,
+        "ride_score": 35,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 23,
+        "screen_pressure_score": 64,
+        "acceleration_score": 72,
+        "discord_score": 89,
+        "ride_score": 65,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 12,
+        "screen_pressure_score": 67,
+        "acceleration_score": 99,
+        "discord_score": 41,
+        "ride_score": 73,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 28,
+        "screen_pressure_score": 75,
+        "acceleration_score": 66,
+        "discord_score": 48,
+        "ride_score": 76,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 75,
+        "screen_pressure_score": 20,
+        "acceleration_score": 31,
+        "discord_score": 13,
+        "ride_score": 48,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 55,
+        "screen_pressure_score": 14,
+        "acceleration_score": 88,
+        "discord_score": 35,
+        "ride_score": 38,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 36,
+        "screen_pressure_score": 7,
+        "acceleration_score": 62,
+        "discord_score": 2,
+        "ride_score": 20,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 89,
+        "screen_pressure_score": 5,
+        "acceleration_score": 0,
+        "discord_score": 73,
+        "ride_score": 11,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 24,
+        "screen_pressure_score": 96,
+        "acceleration_score": 38,
+        "discord_score": 8,
+        "ride_score": 58,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 34,
+        "screen_pressure_score": 88,
+        "acceleration_score": 3,
+        "discord_score": 96,
+        "ride_score": 21,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 8,
+        "screen_pressure_score": 52,
+        "acceleration_score": 12,
+        "discord_score": 39,
+        "ride_score": 35,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 15,
+        "screen_pressure_score": 77,
+        "acceleration_score": 21,
+        "discord_score": 27,
+        "ride_score": 61,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 45,
+        "screen_pressure_score": 78,
+        "acceleration_score": 11,
+        "discord_score": 96,
+        "ride_score": 48,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 20,
+        "screen_pressure_score": 77,
+        "acceleration_score": 91,
+        "discord_score": 16,
+        "ride_score": 36,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 32,
+        "screen_pressure_score": 7,
+        "acceleration_score": 77,
+        "discord_score": 79,
+        "ride_score": 15,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 38,
+        "screen_pressure_score": 52,
+        "acceleration_score": 80,
+        "discord_score": 86,
+        "ride_score": 49,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 67,
+        "screen_pressure_score": 94,
+        "acceleration_score": 31,
+        "discord_score": 81,
+        "ride_score": 11,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 75,
+        "screen_pressure_score": 92,
+        "acceleration_score": 46,
+        "discord_score": 37,
+        "ride_score": 44,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 31,
+        "screen_pressure_score": 32,
+        "acceleration_score": 0,
+        "discord_score": 56,
+        "ride_score": 27,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 89,
+        "screen_pressure_score": 9,
+        "acceleration_score": 62,
+        "discord_score": 78,
+        "ride_score": 64,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 22,
+        "screen_pressure_score": 16,
+        "acceleration_score": 0,
+        "discord_score": 11,
+        "ride_score": 30,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 90,
+        "screen_pressure_score": 65,
+        "acceleration_score": 39,
+        "discord_score": 99,
+        "ride_score": 21,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 54,
+        "screen_pressure_score": 27,
+        "acceleration_score": 13,
+        "discord_score": 41,
+        "ride_score": 91,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 50,
+        "screen_pressure_score": 85,
+        "acceleration_score": 26,
+        "discord_score": 37,
+        "ride_score": 28,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 68,
+        "screen_pressure_score": 7,
+        "acceleration_score": 56,
+        "discord_score": 18,
+        "ride_score": 75,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 29,
+        "screen_pressure_score": 57,
+        "acceleration_score": 64,
+        "discord_score": 25,
+        "ride_score": 85,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 5,
+        "screen_pressure_score": 47,
+        "acceleration_score": 80,
+        "discord_score": 43,
+        "ride_score": 86,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 72,
+        "screen_pressure_score": 22,
+        "acceleration_score": 97,
+        "discord_score": 22,
+        "ride_score": 46,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 19,
+        "screen_pressure_score": 81,
+        "acceleration_score": 87,
+        "discord_score": 9,
+        "ride_score": 42,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 13,
+        "screen_pressure_score": 32,
+        "acceleration_score": 37,
+        "discord_score": 47,
+        "ride_score": 100,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 8,
+        "screen_pressure_score": 12,
+        "acceleration_score": 67,
+        "discord_score": 92,
+        "ride_score": 98,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 91,
+        "screen_pressure_score": 54,
+        "acceleration_score": 41,
+        "discord_score": 65,
+        "ride_score": 36,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 26,
+        "screen_pressure_score": 6,
+        "acceleration_score": 83,
+        "discord_score": 38,
+        "ride_score": 55,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 94,
+        "screen_pressure_score": 31,
+        "acceleration_score": 40,
+        "discord_score": 64,
+        "ride_score": 65,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 76,
+        "screen_pressure_score": 92,
+        "acceleration_score": 1,
+        "discord_score": 10,
+        "ride_score": 67,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 43,
+        "screen_pressure_score": 25,
+        "acceleration_score": 10,
+        "discord_score": 55,
+        "ride_score": 8,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 71,
+        "screen_pressure_score": 33,
+        "acceleration_score": 44,
+        "discord_score": 48,
+        "ride_score": 29,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 78,
+        "screen_pressure_score": 61,
+        "acceleration_score": 45,
+        "discord_score": 73,
+        "ride_score": 51,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 63,
+        "screen_pressure_score": 50,
+        "acceleration_score": 66,
+        "discord_score": 71,
+        "ride_score": 77,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 67,
+        "screen_pressure_score": 29,
+        "acceleration_score": 36,
+        "discord_score": 100,
+        "ride_score": 36,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 52,
+        "screen_pressure_score": 84,
+        "acceleration_score": 91,
+        "discord_score": 25,
+        "ride_score": 42,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 2,
+        "screen_pressure_score": 89,
+        "acceleration_score": 18,
+        "discord_score": 28,
+        "ride_score": 46,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 29,
+        "screen_pressure_score": 67,
+        "acceleration_score": 14,
+        "discord_score": 46,
+        "ride_score": 64,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 11,
+        "screen_pressure_score": 42,
+        "acceleration_score": 5,
+        "discord_score": 43,
+        "ride_score": 81,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 4,
+        "screen_pressure_score": 0,
+        "acceleration_score": 11,
+        "discord_score": 87,
+        "ride_score": 47,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 60,
+        "screen_pressure_score": 71,
+        "acceleration_score": 54,
+        "discord_score": 89,
+        "ride_score": 59,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 100,
+        "screen_pressure_score": 1,
+        "acceleration_score": 95,
+        "discord_score": 0,
+        "ride_score": 66,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 52,
+        "screen_pressure_score": 51,
+        "acceleration_score": 91,
+        "discord_score": 85,
+        "ride_score": 13,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 73,
+        "screen_pressure_score": 93,
+        "acceleration_score": 59,
+        "discord_score": 39,
+        "ride_score": 43,
+        "final_result": "Human"
+    },
+    {
+        "biometric": 1,
+        "wallet_score": 3,
+        "screen_pressure_score": 78,
+        "acceleration_score": 1,
+        "discord_score": 64,
+        "ride_score": 93,
+        "final_result": "Bot"
+    },
+    {
+        "biometric": 0,
+        "wallet_score": 26,
+        "screen_pressure_score": 37,
+        "acceleration_score": 89,
+        "discord_score": 4,
+        "ride_score": 15,
+        "final_result": "Human"
+    }
+]
