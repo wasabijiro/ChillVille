@@ -11,7 +11,9 @@
   "dependencies": {
     "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.1.5",
+    "@zkpass/transgate-js-sdk": "^0.2.0",
     "encoding": "^0.1.13",
+    "ethers": "^6.13.2",
     "heroicons": "^2.1.5",
     "next": "14.2.13",
     "pino-pretty": "^11.2.2",
