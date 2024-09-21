@@ -19,6 +19,7 @@ const navigation = [
 ];
 
 export default function Home() {
+  const votingUrl = process.env.NEXT_PUBLIC_VOTING_URL || '#';
   const [isValid, setIsValid] = useState<boolean>(false);
   const [mlProof, setMLProof] = useState<string | null>(null);
   const [mlPublicInputs, setMLPublicInputs] = useState<string[] | null>(null);
@@ -45,7 +46,7 @@ export default function Home() {
           setMLPublicInputs([publicInput]);
         }
 
-        setIsMLProofVerified(true);
+        // setIsMLProofVerified(true);
       } else {
         console.error("Failed to generate proof.");
       }
@@ -204,7 +205,7 @@ export default function Home() {
             </dl>
             <div className="grid sm:grid-cols-3 mt-12 gap-4 ">
               <div className="w-full">
-                <p className="font-semibold">Step2: Generate ML proof</p>
+                <p className="font-semibold">Step1: Generate ZKML proof</p>
                 <button
                   className="w-full bg-indigo-600 text-white py-2 mt-2 rounded-lg flex items-center justify-center"
                   onClick={() => generateMLProof()}
@@ -226,13 +227,26 @@ export default function Home() {
                 )}
               </div>
               <div>
-                <p className="font-semibold">Step2: Verify ML Proof</p>
+                <p className="font-semibold">Step2: Verify ZKML Proof</p>
                 <button
                   className="w-full bg-indigo-600 py-2 mt-2 rounded-lg text-white"
                   onClick={() => verifyMLProof()}
                 >
                   {isMLProofVerified ? "Verified Successfully" : "Verify"}
                 </button>
+              </div>
+              <div>
+                <p className="font-semibold">Step3: Go to MACI Voting</p>
+                {isMLProofVerified && (
+                  <div className="mt-4">
+                    <button
+                      className="w-full bg-green-600 py-2 rounded-lg text-white"
+                      onClick={() => window.location.href = votingUrl}
+                    >
+                      Go to Voting Page
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>
