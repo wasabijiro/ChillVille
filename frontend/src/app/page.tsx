@@ -17,6 +17,7 @@ import zkPassABI from "@/config/zkPassABI.json";
 
 export default function Home() {
   const votingUrl = process.env.NEXT_PUBLIC_VOTING_URL || '#';
+  const adminUrl = process.env.NEXT_PUBLIC_ADMIN_URL || '#';
   const [isValid, setIsValid] = useState<boolean>(false);
   const [mlProof, setMLProof] = useState<string | null>(null);
   const [mlPublicInputs, setMLPublicInputs] = useState<string[] | null>(null);
@@ -139,13 +140,24 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 text-white">
       <main className="py-8">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold mb-2">
-              Private Onchain Voting with Sybil Resistance
-              <br />
-              MACI meets zkTLS
-            </h1>
-            <p className="text-xl text-gray-400 mb-1">Verify your offchain activity & Vote without exposure</p>
+          <div className="text-center mb-10 flex items-center">
+            <div className="flex-1 text-center">
+              <h1 className="text-4xl font-bold mb-2">
+                Private Onchain Voting with Sybil Resistance
+                <br />
+                MACI meets zkTLS
+              </h1>
+              <p className="text-xl text-gray-400 mb-1">
+                Verify your offchain activity & Vote without exposure
+              </p>
+            </div>
+            <button
+              className="bg-blue-400 py-1 px-3 rounded-lg text-white hover:bg-blue-500 transition-colors ml-auto"
+              style={{ minWidth: '100px' }}
+              onClick={() => window.location.href = adminUrl}
+            >
+              Admin
+            </button>
           </div>
           <div>
             <div className="flex items-center justify-between mb-2">
