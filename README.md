@@ -1,13 +1,21 @@
 # ChillVille
 
 ### Overview
-
+We built a private onchain voting system with sybil resistance by combining MACI and zkTLS. This allows for fairer governance by eliminating bribery and collusion, and enabling private voting based on off-chain contributions.
 
 ### Problems
+In decentralized governance, onchain voting plays a pivotal role in decision-making. However, the transparency of individual votes poses several challenges:
 
+Vote Transparency and Bribery: Since onchain votes are publicly visible, it opens the door for bribery, collusion, and undue influence, compromising the integrity of the voting process.
+Sybil Attacks: Malicious actors can manipulate votes by creating multiple identities (Sybil attacks), skewing the voting results. Preventing such attacks is difficult with existing onchain mechanisms.
+Off-Chain Data Integration: While incorporating off-chain data into Web3 applications could enhance the system's security and fairness, doing so in a private, portable, and permissionless manner has proven challenging.
 
 ### Solution
+In decentralized governance, onchain voting plays a pivotal role in decision-making. However, the transparency of individual votes poses several challenges:
 
+Vote Transparency and Bribery: Since onchain votes are publicly visible, it opens the door for bribery, collusion, and undue influence, compromising the integrity of the voting process.
+Sybil Attacks: Malicious actors can manipulate votes by creating multiple identities (Sybil attacks), skewing the voting results. Preventing such attacks is difficult with existing onchain mechanisms.
+Off-Chain Data Integration: While incorporating off-chain data into Web3 applications could enhance the system's security and fairness, doing so in a private, portable, and permissionless manner has proven challenging.
 
 ### Usecase
 
