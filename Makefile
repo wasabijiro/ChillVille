@@ -4,6 +4,9 @@ ui_install:
 ui_dev:
 	cd frontend && bun run dev
 
+ui_build:
+	cd frontend && bun run build
+
 maci_install:
 	cd maci-template && yarn install
 

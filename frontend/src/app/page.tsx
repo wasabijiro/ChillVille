@@ -7,7 +7,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
-import { useAccount } from "wagmi";
 
 import { ConnectWalletButton } from "@/components/Wallet";
 import { stats } from "@/config/stats/stats";
