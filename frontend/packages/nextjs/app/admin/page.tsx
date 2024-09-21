@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import { redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import CreatePollModal from "./_components/CreatePollModal";
 import PollStatusModal from "./_components/PollStatusModal";
 import { useAccount } from "wagmi";
@@ -23,9 +23,9 @@ export default function AdminPage() {
   const [selectedPollForStatusModal, setSelectedPollForStatusModal] = useState<Poll>();
 
   useEffect(() => {
-    console.log({ admin });
-    console.log({ address });
-    console.log({ refetchPolls });
+	console.log({ admin});
+	console.log({ address});
+  console.log({ refetchPolls});
     if (!admin || !address) return;
     // if (address !== admin) {
     //   redirect("/");
