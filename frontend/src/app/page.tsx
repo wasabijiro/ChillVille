@@ -6,6 +6,10 @@ import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 import TransgateConnect from "@zkpass/transgate-js-sdk";
 import { ethers } from "ethers";
 
+import { VerificationLevel, IDKitWidget, useIDKit } from "@worldcoin/idkit";
+import type { ISuccessResult } from "@worldcoin/idkit";
+
+import { verify } from "./actions/verify";
 import { ConnectWalletButton } from "@/components/Wallet";
 import { stats } from "@/config/stats/stats";
 import { fetchMLInference } from "@/libs/ml";
@@ -18,6 +22,9 @@ import zkPassABI from "@/config/zkPassABI.json";
 export default function Home() {
   const votingUrl = process.env.NEXT_PUBLIC_VOTING_URL || '#';
   const adminUrl = process.env.NEXT_PUBLIC_ADMIN_URL || '#';
+  const app_id = process.env.NEXT_PUBLIC_WLD_APP_ID as `app_${string}`;
+  const action = process.env.NEXT_PUBLIC_WLD_ACTION;
+
   const [isValid, setIsValid] = useState<boolean>(false);
   const [mlProof, setMLProof] = useState<string | null>(null);
   const [mlPublicInputs, setMLPublicInputs] = useState<string[] | null>(null);
@@ -26,6 +33,11 @@ export default function Home() {
 
   const [discordScore, setDiscordScore] = useState(0);
   const [discordOwnerVerified, setDiscordOwnerVerified] = useState(false);
+
+  const [worldcoinScore, setWorldcoinScore] = useState(0);
+  const [worldcoinVerified, setWorldcoinVerified] = useState(false);
+
+  const { setOpen } = useIDKit();
 
   const zkPassStart = async () => {
     try {
@@ -91,7 +103,7 @@ export default function Home() {
     setIsProofGenerating(true);
 
     try {
-      const proofId = await generateZKMLProof(discordScore);
+      const proofId = await generateZKMLProof(discordScore, worldcoinScore);
 
       if (proofId) {
         console.log("Proof generated:", proofId);
@@ -124,11 +136,34 @@ export default function Home() {
 
   const reloadMLInference = async () => {
     console.log("Reloading");
-    const prediction = await fetchMLInference(discordScore, stats);
+    const prediction = await fetchMLInference(discordScore, worldcoinScore, stats);
     if (prediction === 'Human') {
       setIsValid(true);
     } else if (prediction === 'Bot') {
       setIsValid(false);
+    }
+  };
+
+  const onSuccess = (result: ISuccessResult) => {
+    // This is where you should perform frontend actions once a user has been verified, such as redirecting to a new page
+    window.alert(
+      "Successfully verified with World ID! Your nullifier hash is: " +
+        result.nullifier_hash
+    );
+  };
+
+  const handleProof = async (result: ISuccessResult) => {
+    console.log(
+      "Proof received from IDKit, sending to backend:\n",
+      JSON.stringify(result)
+    ); // Log the proof from IDKit to the console for visibility
+    const data = await verify(result);
+    if (data.success) {
+      setWorldcoinScore(1)
+      setWorldcoinVerified(true);
+      console.log("Successful response from backend:\n", JSON.stringify(data)); // Log the response from our backend for visibility
+    } else {
+      throw new Error(`Verification failed: ${data.detail}`);
     }
   };
 
@@ -213,6 +248,46 @@ export default function Home() {
                       onClick={() => console.log("verify discord activity")}
                     >
                       Verify Discord Activity
+                    </button>
+                  </div>
+                  <div className="absolute inset-x-0 bottom-0 bg-gray-700 px-4 py-4 sm:px-6">
+                    <div className="text-sm">
+                      <a
+                        href="#"
+                        className="font-medium text-indigo-400 hover:text-indigo-300"
+                      >
+                        View source
+                        <span className="sr-only"> stats</span>
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </div>
+
+              <div className="relative overflow-hidden rounded-lg bg-gray-800 px-4 pb-12 pt-5 shadow border border-gray-700 sm:px-6 sm:pt-6">
+                <dt>
+                  <div className="absolute rounded-md bg-indigo-500 p-3">
+                    <CheckBadgeIcon className="h-6 w-6 text-white" />
+                  </div>
+                  <p className="ml-16 truncate text-sm font-medium text-gray-400">
+                    WorldCoin
+                  </p>
+                </dt>
+                <dd className="mt-1 ml-16 flex flex-col items-start pb-6 sm:pb-7">
+                  <p className="text-2xl font-semibold text-gray-100">{worldcoinScore}</p>
+                  <div className="mt-4 flex space-x-4">
+                  <IDKitWidget
+                    action={action!}
+                    app_id={app_id}
+                    onSuccess={onSuccess}
+                    handleVerify={handleProof}
+                    verification_level={VerificationLevel.Orb} // Change this to VerificationLevel.Device to accept Orb- and Device-verified users
+                  />
+                    <button
+                      className="bg-indigo-600 text-white py-1 px-2 rounded-md text-sm hover:bg-indigo-700 transition-colors"
+                      onClick={() => setOpen(true)}
+                    >
+                      {worldcoinVerified ? "Verified!" : "Verify with World ID"}
                     </button>
                   </div>
                   <div className="absolute inset-x-0 bottom-0 bg-gray-700 px-4 py-4 sm:px-6">
