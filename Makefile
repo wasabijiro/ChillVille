@@ -1,20 +1,26 @@
 ui_install:
-	cd frontend && yarn install
+	cd frontend && bun i
 
 ui_dev:
-	cd frontend && yarn start
+	cd frontend && bun run dev
 
-ui_build:
-	cd frontend && yarn next:build
+maci_install:
+	cd maci-template && yarn install
 
-ui_fmt:
-	cd frontend && yarn format
+maci_dev:
+	cd maci-template && yarn start
+
+maci_build:
+	cd maci-template && yarn next:build
+
+maci_fmt:
+	cd maci-template && yarn format
 
 download_zkey:
-	cd frontend && yarn download-zkeys
+	cd maci-template && yarn download-zkeys
 
 deploy_maci:
-	cd frontend && yarn deploy
+	cd maci-template && yarn deploy
 
 ml_server:
 	cd backend/ml && python app.py
