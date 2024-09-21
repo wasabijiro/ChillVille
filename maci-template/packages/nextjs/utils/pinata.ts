@@ -3,6 +3,7 @@ import axios from "axios";
 export async function uploadToPinata(jsonData: any) {
   const url = `https://api.pinata.cloud/pinning/pinJSONToIPFS`;
   const pinataJWT = process.env.NEXT_PUBLIC_PINATA_JWT || "";
+  console.log({ pinataJWT });
 
   const { data } = await axios.post(
     url,
