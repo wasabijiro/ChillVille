@@ -23,9 +23,6 @@ export default function AdminPage() {
   const [selectedPollForStatusModal, setSelectedPollForStatusModal] = useState<Poll>();
 
   useEffect(() => {
-    console.log({ admin });
-    console.log({ address });
-    console.log({ refetchPolls });
     if (!admin || !address) return;
     // if (address !== admin) {
     //   redirect("/");
