@@ -1,11 +1,20 @@
 ui_install:
-	cd frontend && bun i
+	cd frontend && yarn install
 
 ui_dev:
-	cd frontend && bun run dev
+	cd frontend && yarn start
 
 ui_build:
-	cd frontend && bun run build
+	cd frontend && yarn next:build
+
+ui_fmt:
+	cd frontend && yarn format
+
+download_zkey:
+	cd frontend && yarn download-zkeys
+
+deploy_maci:
+	cd frontend && yarn deploy
 
 ml_server:
 	cd backend/ml && python app.py
