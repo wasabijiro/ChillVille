@@ -4,18 +4,18 @@ import { findStatValue } from '@/utils/findStat';
 import { stats } from '@/config/stats/stats';
 import { CIRCUIT_ID } from '@/config/circuit';
 import { config } from "@/app/config";
-import { ETHEREUM_SEPOLIA_VERIFIER_ADDRESS } from "@/config/contract";
+import { ETHEREUM_SEPOLIA_ZKML_VERIFIER_ADDRESS } from "@/config/contract";
 import { MLVerifierContractABI } from "@/config/abi";
 
-export const generateZKMLProof = async (): Promise<string | null> => {
+export const generateZKMLProof = async (discord_score: number): Promise<string | null> => {
   try {
     const inputs = [
+      discord_score,
       findStatValue(stats, stats[0].name, "int"),
       findStatValue(stats, stats[1].name, "int"),
       findStatValue(stats, stats[2].name, "int"),
       findStatValue(stats, stats[3].name, "int"),
       findStatValue(stats, stats[4].name, "int"),
-      findStatValue(stats, stats[5].name, "int"),
     ];
 
     console.log({ inputs });
@@ -99,7 +99,7 @@ export const verifyZKMLProof = async (proof: string, publicInput: string[]): Pro
   try {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const result: any = await readContract(config, {
-      address: ETHEREUM_SEPOLIA_VERIFIER_ADDRESS,
+      address: ETHEREUM_SEPOLIA_ZKML_VERIFIER_ADDRESS,
       abi: MLVerifierContractABI,
       functionName: 'verify',
       args: [formattedProof, publicInput],
