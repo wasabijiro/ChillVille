@@ -34,25 +34,33 @@ By combining **MACI**, **zkTLS**, and **zkML**, we’ve created a Sybil-resistan
 ```mermaid
   sequenceDiagram
     actor User
-    participant BankWebsite as Bank Account Web
-    participant ChromeExt as zkCredit (Chrome Extension)
-    participant Frontend as zkCredit Dashboard
-    participant RustServer as Rust Verify
+    participant Discord as Discord Account Web
+    participant zkPassExt as zkPass (Chrome Extension)
+    participant Dashboard as Dashboard
+    participant zkServer as zkProof Verification Server
     participant Verifier as Verifier Contract
-    participant ENS as ENS
+    participant WorldID as World ID System
+    participant VotingSystem as Voting System
+    participant Coordinator as Voting Coordinator
 
-    User->>BankWebsite: 1. Login
-    BankWebsite-->>ChromeExt: HTTPS Response with user data and signature
-    ChromeExt->>ChromeExt: 2. Generate zkTLSProof from user data
-    ChromeExt-->>User: 3. Provide zkTLSProof for download
-    User->>Frontend: 4. Upload zkTLSProof to dashboard
-    Frontend->>RustServer: 5. Send zkTLSProof for verification
-    RustServer-->>Frontend: 6. Return verification result
-    Frontend->>Frontend: 7. Generate zkMLProof<br/>(private input: input data, public input: existing model)
-    Frontend->>Verifier: 8. Send zkMLProof to verifier contract
-    Verifier-->>Frontend: 9. Return verification result<br/>(public output: inference result)
-    Frontend->>ENS: 10. Store verification result on ENS text records
-
+    User->>Discord: 1. Login to Discord
+    Discord-->>zkPassExt: HTTPS Response with user data and signature
+    zkPassExt->>zkPassExt: 2. Generate zkTLSProof from Discord data
+    zkPassExt-->>User: 3. Provide zkTLSProof for download
+    User->>Dashboard: 4. Upload zkTLSProof to dashboard
+    Dashboard->>zkServer: 5. Send zkTLSProof for verification
+    zkServer-->>Dashboard: 6. Return verification result (Discord account ownership verified)
+    Dashboard->>WorldID: 7. Verify World ID (Prove biometric data)
+    WorldID-->>Dashboard: 8. Return verification result (World ID ownership verified)
+    Dashboard->>Dashboard: 9. Generate zkMLProof (private input: user activity, public input: machine learning model)
+    Dashboard->>Verifier: 10. Send zkMLProof to verifier contract
+    Verifier-->>Dashboard: 11. Return verification result (user activity and eligibility verified)
+    Dashboard-->>User: 12. Verified! Access Voting System
+    User->>VotingSystem: 13. Select poll and cast vote
+    VotingSystem->>Coordinator: 14. Notify coordinator of user signup
+    Coordinator->>Coordinator: 15. Merge user signups and messages, generate zkProof
+    Coordinator-->>VotingSystem: 16. Provide tally.json (with only final voting result)
+    VotingSystem-->>User: 17. Display voting result
 ```
 
 ### Development
