@@ -23,10 +23,6 @@ To address these challenges, we have developed a private, Sybil-resistant onchai
 
 By combining **MACI**, **zkTLS**, and **zkML**, we’ve created a Sybil-resistant, private onchain voting system that incorporates off-chain data while ensuring security and privacy. Off-chain contributions are verifiable through zkTLS and zkML and are seamlessly integrated into MACI, providing a robust solution to the challenges of vote transparency and Sybil resistance.
 
-
-### Usecase
-
-
 ### Technologies I used
 <img width="715" alt="スクリーンショット 2024-09-22 7 45 39" src="https://github.com/user-attachments/assets/e3b7ae77-7383-48e7-b800-539ee10868be">
 
@@ -39,7 +35,6 @@ By combining **MACI**, **zkTLS**, and **zkML**, we’ve created a Sybil-resistan
     participant Dashboard as Dashboard
     participant zkServer as zkProof Verification Server
     participant Verifier as Verifier Contract
-    participant WorldID as World ID System
     participant VotingSystem as Voting System
     participant Coordinator as Voting Coordinator
 
@@ -48,19 +43,15 @@ By combining **MACI**, **zkTLS**, and **zkML**, we’ve created a Sybil-resistan
     zkPassExt->>zkPassExt: 2. Generate zkTLSProof from Discord data
     zkPassExt-->>User: 3. Provide zkTLSProof for download
     User->>Dashboard: 4. Upload zkTLSProof to dashboard
-    Dashboard->>zkServer: 5. Send zkTLSProof for verification
-    zkServer-->>Dashboard: 6. Return verification result (Discord account ownership verified)
-    Dashboard->>WorldID: 7. Verify World ID (Prove biometric data)
-    WorldID-->>Dashboard: 8. Return verification result (World ID ownership verified)
-    Dashboard->>Dashboard: 9. Generate zkMLProof (private input: user activity, public input: machine learning model)
-    Dashboard->>Verifier: 10. Send zkMLProof to verifier contract
-    Verifier-->>Dashboard: 11. Return verification result (user activity and eligibility verified)
-    Dashboard-->>User: 12. Verified! Access Voting System
-    User->>VotingSystem: 13. Select poll and cast vote
-    VotingSystem->>Coordinator: 14. Notify coordinator of user signup
-    Coordinator->>Coordinator: 15. Merge user signups and messages, generate zkProof
-    Coordinator-->>VotingSystem: 16. Provide tally.json (with only final voting result)
-    VotingSystem-->>User: 17. Display voting result
+    Dashboard->>Dashboard: 5. Generate zkMLProof (private input: user activity, public input: machine learning model)
+    Dashboard->>Verifier: 6. Send zkMLProof to verifier contract
+    Verifier-->>Dashboard: 7. Return verification result (user activity and eligibility verified)
+    Dashboard-->>User: 8. Verified! Access Voting System
+    User->>VotingSystem: 9. Select poll and cast vote
+    VotingSystem->>Coordinator: 10. Notify coordinator of user signup
+    Coordinator->>Coordinator: 11. Merge user signups and messages, generate zkProof
+    Coordinator-->>VotingSystem: 12. Provide tally.json (with only final voting result)
+    VotingSystem-->>User: 13. Display voting result
 ```
 
 ### Development
