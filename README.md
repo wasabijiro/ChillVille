@@ -99,7 +99,7 @@ https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
 
 | Title          |                                                              URL |
 | :------------- | ---------------------------------------------------------------: |
-| Demo Movie      |                                      [https://youtu.be/zmENJzrxZRw](https://youtu.be/WDGJQbM-rik)|
+| Demo Movie      |                                      [[https://youtu.be/zmENJzrxZRw](https://youtu.be/WDGJQbM-rik](https://youtu.be/Q9-vxqqNYXM))|
 | Pitch Doc    |   [chillville-presentation](https://www.canva.com/design/DAGRZRWummM/d9pPp11CQoBMzAf8bC4YEw/edit?utm_content=DAGRZRWummM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) |
 | Demo Site     |                                 [chillville-demo](https://eth-sg.vercel.app/)| 
 
