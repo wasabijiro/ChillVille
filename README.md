@@ -90,8 +90,10 @@ https://sepolia.etherscan.io/address/0x6390aa9b19d4d2bbda745c03deca0a5775f9b0e2
 | Linea Testnet   | [0xb764f3cea872ae3995c3eb0c6e533d6aa6c490bf](https://sepolia.lineascan.build/address/0xb764f3cea872ae3995c3eb0c6e533d6aa6c490bf#code)|
 
 ### What's next for
-
-
+- deploy backend
+- deploy on mainnet
+- Integrate zkPass and zkML into a single circuit
+- Integrate zkPass and MACI solidity contract
 
 ### Implementation Status
 
